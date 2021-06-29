@@ -21,5 +21,5 @@ protocol StoreViewProtocol : class {
     func declined()
     func showLoading()
     func hideLoading()
-    func showAlert(with title: String, message: String, buttonTitle: String)
+    func showAlert(with title: String, message: String, buttonTitle: String, action: @escaping ()->())
 }

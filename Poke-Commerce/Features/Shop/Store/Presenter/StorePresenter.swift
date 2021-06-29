@@ -95,7 +95,7 @@ extension StorePresenter {
                 self.view.showTransactionSuccessAndClose()
             }
             else {
-                self.view.showAlert(with: "Error", message: "We are experiencing some problems trying to complete your purchase, please try again later", buttonTitle: "OK")
+                self.view.showAlert(with: "Error", message: "We are experiencing some problems trying to complete your purchase, please try again later.", buttonTitle: "OK", action: {})
                 self.view.hideLoading()
             }
         }

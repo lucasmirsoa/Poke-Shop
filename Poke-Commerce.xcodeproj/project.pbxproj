@@ -41,7 +41,6 @@
 		770C6BFC26896C7F003B204A /* PurchaseLocalServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6BFB26896C7F003B204A /* PurchaseLocalServiceManager.swift */; };
 		770C6BFF26896CFA003B204A /* PurchaseRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6BFE26896CFA003B204A /* PurchaseRealm.swift */; };
 		770C6C0626896EE9003B204A /* LocalServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C0526896EE9003B204A /* LocalServiceManager.swift */; };
-		770C6C0A26898EC3003B204A /* Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C0926898EC3003B204A /* Do.swift */; };
 		770C6C1326899334003B204A /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C1226899334003B204A /* Purchase.swift */; };
 		770C6C1726899C20003B204A /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C1626899C20003B204A /* PurchaseCell.swift */; };
 		770C6C272689A3FA003B204A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 770C6C262689A3FA003B204A /* RealmSwift */; };
@@ -101,7 +100,6 @@
 		770C6BFB26896C7F003B204A /* PurchaseLocalServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseLocalServiceManager.swift; sourceTree = "<group>"; };
 		770C6BFE26896CFA003B204A /* PurchaseRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseRealm.swift; sourceTree = "<group>"; };
 		770C6C0526896EE9003B204A /* LocalServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalServiceManager.swift; sourceTree = "<group>"; };
-		770C6C0926898EC3003B204A /* Do.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Do.swift; sourceTree = "<group>"; };
 		770C6C1226899334003B204A /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
 		770C6C1626899C20003B204A /* PurchaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
 		770C6C3D2689C571003B204A /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
@@ -213,7 +211,6 @@
 				770C6B8A2685549B003B204A /* ApiServiceManager.swift */,
 				770C6B382680F058003B204A /* Colors.swift */,
 				770C6B9026858516003B204A /* Loader.swift */,
-				770C6C0926898EC3003B204A /* Do.swift */,
 			);
 			path = Essentials;
 			sourceTree = "<group>";
@@ -629,7 +626,6 @@
 				770C6B752682D011003B204A /* ProductCollectionCell.swift in Sources */,
 				770C6B2826803285003B204A /* NSObjectExtension.swift in Sources */,
 				770C6C1726899C20003B204A /* PurchaseCell.swift in Sources */,
-				770C6C0A26898EC3003B204A /* Do.swift in Sources */,
 				770C6C1326899334003B204A /* Purchase.swift in Sources */,
 				770C6C51268A6DE0003B204A /* JoyAskingStep1.swift in Sources */,
 				770C6B552681371A003B204A /* ProductListViewProtocol.swift in Sources */,

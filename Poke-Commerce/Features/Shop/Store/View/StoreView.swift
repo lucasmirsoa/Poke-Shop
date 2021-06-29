@@ -133,7 +133,7 @@ extension StoreView: StoreViewProtocol {
     }
     
     func declined() {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     func storageCreditCard(with creditCard: CreditCard) {
@@ -144,7 +144,7 @@ extension StoreView: StoreViewProtocol {
         fail: {
             self.showAlert(with: "Credit Card Problem",
                            message: "Dosen't take this so serious, but this credit card is far far away from an original one, right?",
-                           buttonTitle: "OK")
+                           buttonTitle: "OK", action: {})
         })
     }
     
@@ -158,13 +158,9 @@ extension StoreView: StoreViewProtocol {
     }
     
     func showTransactionSuccessAndClose() {
-        let alert = UIAlertController(title: "Success", message: "Transaction done, your purchase was registered!", preferredStyle: UIAlertController.Style.alert)
-        
-        alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { _ in
+        self.showAlert(with: "Success", message: "Transaction done, your purchase was registered!", buttonTitle: "OK", action: {
             self.navigationController?.popToRootViewController(animated: true)
-        }))
-        
-        self.present(alert, animated: true, completion: nil)
+        })
     }
     
     func showLoading() {
@@ -175,12 +171,12 @@ extension StoreView: StoreViewProtocol {
         spinner.stop()
     }
     
-    func showAlert(with title: String, message: String, buttonTitle: String) {
+    func showAlert(with title: String, message: String, buttonTitle: String, action: @escaping ()->()) {
     
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         
         alert.addAction(UIAlertAction(title: buttonTitle, style: .destructive, handler: { _ in
-            self.declined()
+            action()
         }))
         
         self.present(alert, animated: true, completion: nil)
