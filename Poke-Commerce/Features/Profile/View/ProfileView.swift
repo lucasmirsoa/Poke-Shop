@@ -31,7 +31,7 @@ class ProfileView: UITableViewController {
 extension ProfileView {
     
     private func tableLayout() {
-        tableView.tableFooterView = UIView(frame: .zero)
+        self.tableView.tableFooterView = UIView(frame: .zero)
     }
 }
 
@@ -39,34 +39,29 @@ extension ProfileView {
 
 extension ProfileView {
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return presenter.numberOfSections()
-    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return presenter.numberOfItems(to: section)
+        return presenter.numberOfItems()
     }
     
     override internal func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        
-        return CGFloat(self.presenter.heightForHeader(to: section))
+        return CGFloat(self.presenter.heightForHeader())
     }
     
     override internal func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        if section == 0 {
-            
+        if self.presenter.isEmptyCell() {
             let header = tableView.dequeueReusableCell(withIdentifier: "EmptyCell")
+            self.tableView.backgroundColor = Colors.profile(type: .emptyProfile).color
             return header
         }
         
         let header = tableView.dequeueReusableCell(withIdentifier: "SectionCell")
+        self.tableView.backgroundColor = Colors.profile(type: .commomProfile).color
         return header
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 180
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

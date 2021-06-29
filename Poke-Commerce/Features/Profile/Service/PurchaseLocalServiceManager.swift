@@ -19,7 +19,7 @@ final class PurchaseLocalServiceManager {
         
         guard let dataBase = self.realmDB else { return [Purchase]() }
         
-        let purchases = dataBase.objects(PurchaseRealm.self).sorted(byKeyPath: "date", ascending: false)
+        let purchases = dataBase.objects(PurchaseRealm.self).sorted(byKeyPath: "date", ascending: true)
         
         return self.parse(with: purchases)
     }

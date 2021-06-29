@@ -23,35 +23,26 @@ final class ProfilePresenter {
 extension ProfilePresenter {
     
     func viewWillAppear() {
-        self.updateStorageItems()
+        self.viewItems = purchaseDataManager.getPurchases()
+        self.view.reloadTableView()
     }
     
     func getPurchase(to row: Int) -> Purchase {
         return self.viewItems[row]
     }
     
-    func numberOfSections() -> Int {
-        return 1
-    }
-    
-    func numberOfItems(to section: Int) -> Int {
-        if section == 0 { return 0 }
+    func numberOfItems() -> Int {
         return self.viewItems.count
     }
     
-    func heightForHeader(to section: Int) -> Int {
-        if section == 0 { return 300 }
+    func heightForHeader() -> Int {
+        if self.viewItems.count == 0 {
+            return 300
+        }
         return 50
     }
-}
-
-// MARK: - Private methods
-
-extension ProfilePresenter {
-
-    private func updateStorageItems() {
-        
-        self.viewItems = purchaseDataManager.getPurchases()
-        self.view.reloadTableView()
+    
+    func isEmptyCell() -> Bool {
+        return self.viewItems.count == 0
     }
 }

@@ -56,12 +56,10 @@
 		770C6C51268A6DE0003B204A /* JoyAskingStep1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C50268A6DE0003B204A /* JoyAskingStep1.swift */; };
 		770C6C55268A6DF1003B204A /* JoyAskingStep2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C54268A6DF1003B204A /* JoyAskingStep2.swift */; };
 		770C6C58268A6E17003B204A /* CreditCardStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C57268A6E17003B204A /* CreditCardStep.swift */; };
-		770C6C5B268A6E97003B204A /* CreditCardConfirmationStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C5A268A6E97003B204A /* CreditCardConfirmationStep.swift */; };
 		770C6C5E268A6EAA003B204A /* PurchaseStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C5D268A6EAA003B204A /* PurchaseStep.swift */; };
 		770C6C61268A6EC7003B204A /* JoyAskingStep1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C60268A6EC7003B204A /* JoyAskingStep1.xib */; };
 		770C6C64268A6ED4003B204A /* JoyAskingStep2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C63268A6ED4003B204A /* JoyAskingStep2.xib */; };
 		770C6C67268A6EE1003B204A /* CreditCardStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C66268A6EE1003B204A /* CreditCardStep.xib */; };
-		770C6C6A268A6EF2003B204A /* CreditCardConfirmationStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C69268A6EF2003B204A /* CreditCardConfirmationStep.xib */; };
 		770C6C6D268A6F0E003B204A /* PurchaseStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C6C268A6F0E003B204A /* PurchaseStep.xib */; };
 		770C6C80268A80B2003B204A /* PurchaseServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C7F268A80B2003B204A /* PurchaseServiceManager.swift */; };
 /* End PBXBuildFile section */
@@ -114,12 +112,10 @@
 		770C6C50268A6DE0003B204A /* JoyAskingStep1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyAskingStep1.swift; sourceTree = "<group>"; };
 		770C6C54268A6DF1003B204A /* JoyAskingStep2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyAskingStep2.swift; sourceTree = "<group>"; };
 		770C6C57268A6E17003B204A /* CreditCardStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardStep.swift; sourceTree = "<group>"; };
-		770C6C5A268A6E97003B204A /* CreditCardConfirmationStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardConfirmationStep.swift; sourceTree = "<group>"; };
 		770C6C5D268A6EAA003B204A /* PurchaseStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseStep.swift; sourceTree = "<group>"; };
 		770C6C60268A6EC7003B204A /* JoyAskingStep1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JoyAskingStep1.xib; sourceTree = "<group>"; };
 		770C6C63268A6ED4003B204A /* JoyAskingStep2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JoyAskingStep2.xib; sourceTree = "<group>"; };
 		770C6C66268A6EE1003B204A /* CreditCardStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardStep.xib; sourceTree = "<group>"; };
-		770C6C69268A6EF2003B204A /* CreditCardConfirmationStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardConfirmationStep.xib; sourceTree = "<group>"; };
 		770C6C6C268A6F0E003B204A /* PurchaseStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseStep.xib; sourceTree = "<group>"; };
 		770C6C7F268A80B2003B204A /* PurchaseServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -485,7 +481,6 @@
 				770C6C6F268A6F12003B204A /* Step 1 */,
 				770C6C70268A6F1D003B204A /* Step 2 */,
 				770C6C71268A6F24003B204A /* Step 3 */,
-				770C6C72268A6F2A003B204A /* Step 4 */,
 				770C6C74268A6F49003B204A /* Final Step */,
 			);
 			path = "Purchase Steps";
@@ -516,15 +511,6 @@
 				770C6C57268A6E17003B204A /* CreditCardStep.swift */,
 			);
 			path = "Step 3";
-			sourceTree = "<group>";
-		};
-		770C6C72268A6F2A003B204A /* Step 4 */ = {
-			isa = PBXGroup;
-			children = (
-				770C6C69268A6EF2003B204A /* CreditCardConfirmationStep.xib */,
-				770C6C5A268A6E97003B204A /* CreditCardConfirmationStep.swift */,
-			);
-			path = "Step 4";
 			sourceTree = "<group>";
 		};
 		770C6C74268A6F49003B204A /* Final Step */ = {
@@ -617,7 +603,6 @@
 				770C6BCE26864279003B204A /* ProductDetailView.storyboard in Resources */,
 				770C6C412689C57C003B204A /* StoreView.storyboard in Resources */,
 				770C6C67268A6EE1003B204A /* CreditCardStep.xib in Resources */,
-				770C6C6A268A6EF2003B204A /* CreditCardConfirmationStep.xib in Resources */,
 				770C6B4A26811415003B204A /* ProductListView.storyboard in Resources */,
 				770C6C61268A6EC7003B204A /* JoyAskingStep1.xib in Resources */,
 				770C6C64268A6ED4003B204A /* JoyAskingStep2.xib in Resources */,
@@ -666,7 +651,6 @@
 				770C6B4726811404003B204A /* ProductListView.swift in Sources */,
 				770C6B622682B4FC003B204A /* SectionTableCell.swift in Sources */,
 				770C6C80268A80B2003B204A /* PurchaseServiceManager.swift in Sources */,
-				770C6C5B268A6E97003B204A /* CreditCardConfirmationStep.swift in Sources */,
 				770C6B5F2682B4D1003B204A /* ProductTableCell.swift in Sources */,
 				770C6B8B2685549B003B204A /* ApiServiceManager.swift in Sources */,
 				770C6AE1267FEE80003B204A /* SceneDelegate.swift in Sources */,

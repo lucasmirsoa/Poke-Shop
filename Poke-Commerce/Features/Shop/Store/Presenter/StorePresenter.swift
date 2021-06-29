@@ -21,7 +21,6 @@ final class StorePresenter {
         case secondStep
         case thirdStep
         case fourthStep
-        case fifthStep
         case finished
     }
     
@@ -55,10 +54,6 @@ extension StorePresenter {
             self.nextStep = .fourthStep
             
         case .fourthStep:
-            self.view.showCreditCardConfirmationStep()
-            self.nextStep = .fifthStep
-            
-        case .fifthStep:
             guard let item = self.viewItem else {
                 fatalError("Purchase cannot be completed, viewItem nil")
             }
@@ -96,9 +91,8 @@ extension StorePresenter {
             
             if success {
                 PurchaseLocalServiceManager().savePurchase(with: purchase)
-                self.view.showAlert(with: "Success", message: "Transaction done, your purchase was registered!", buttonTitle: "OK")
                 self.view.hideLoading()
-                self.view.closeStore()
+                self.view.showTransactionSuccessAndClose()
             }
             else {
                 self.view.showAlert(with: "Error", message: "We are experiencing some problems trying to complete your purchase, please try again later", buttonTitle: "OK")

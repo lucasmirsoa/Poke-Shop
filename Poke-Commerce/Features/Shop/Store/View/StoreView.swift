@@ -16,7 +16,6 @@ class StoreView: UIViewController {
     private lazy var joyAsking1View = Bundle.main.loadNibNamed(JoyAskingStep1.identifier, owner: self, options: nil)?[0] as! JoyAskingStep1
     private lazy var joyAsking2View = Bundle.main.loadNibNamed(JoyAskingStep2.identifier, owner: self, options: nil)?[0] as! JoyAskingStep2
     private lazy var creditCardView = Bundle.main.loadNibNamed(CreditCardStep.identifier, owner: self, options: nil)?[0] as! CreditCardStep
-    private lazy var creditCardConfirmationView = Bundle.main.loadNibNamed(CreditCardConfirmationStep.identifier, owner: self, options: nil)?[0] as! CreditCardConfirmationStep
     private lazy var purchaseView = Bundle.main.loadNibNamed(PurchaseStep.identifier, owner: self, options: nil)?[0] as! PurchaseStep
     
     private lazy var spinner = Loader(size: .larger)
@@ -120,19 +119,6 @@ extension StoreView: StoreViewProtocol {
                           completion: nil)
     }
     
-    func showCreditCardConfirmationStep() {
-        
-        self.creditCardConfirmationView.storeView = self
-        self.creditCardConfirmationView.fillOutlets(with: presenter.getCreditCard())
-        
-        UIView.transition(with: self.view,
-                          duration: 0.5,
-                          options: .transitionFlipFromLeft,
-                          animations: {
-                            self.addSubviewWithFullView(with: self.creditCardConfirmationView) },
-                          completion: nil)
-    }
-    
     func showPurchaseStep(with item: ProductDetail) {
         
         self.purchaseView.storeView = self
@@ -156,7 +142,9 @@ extension StoreView: StoreViewProtocol {
             self.jumpToNextStep()
         },
         fail: {
-            self.showAlert(with: "Credit Card Problem", message: "Dosen't take this so serious, but this credit card is far far away from an original one, right?", buttonTitle: "OK")
+            self.showAlert(with: "Credit Card Problem",
+                           message: "Dosen't take this so serious, but this credit card is far far away from an original one, right?",
+                           buttonTitle: "OK")
         })
     }
     
@@ -165,11 +153,18 @@ extension StoreView: StoreViewProtocol {
     }
     
     func purchaseFinished() {
+        self.showLoading()
         self.presenter.doTransaction()
     }
     
-    func closeStore() {
-        self.navigationController?.popToRootViewController(animated: true)
+    func showTransactionSuccessAndClose() {
+        let alert = UIAlertController(title: "Success", message: "Transaction done, your purchase was registered!", preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { _ in
+            self.navigationController?.popToRootViewController(animated: true)
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     func showLoading() {
