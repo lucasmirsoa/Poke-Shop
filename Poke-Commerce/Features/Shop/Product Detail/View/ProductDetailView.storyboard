@@ -97,11 +97,22 @@
                         <outlet property="typesBotMargin" destination="4PJ-3M-bUy" id="bXd-2x-Lpy"/>
                         <outlet property="weakness" destination="sQn-Vm-LVq" id="n3k-QF-bwF"/>
                         <outlet property="weaknessBotMargin" destination="hy9-j7-7Z7" id="woF-dX-2KG"/>
+                        <segue destination="Es7-uD-aUC" kind="show" identifier="store" id="IXo-v4-aar"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LS4-yQ-bCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="989.85507246376824" y="-591.29464285714278"/>
+        </scene>
+        <!--StoreView-->
+        <scene sceneID="tcr-jI-bMN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StoreView" id="Es7-uD-aUC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LhP-kK-4pr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebh-9j-Mys" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="-591"/>
         </scene>
     </scenes>
     <resources>

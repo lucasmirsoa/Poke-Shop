@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreditCardStep" customModule="Poke_Commerce" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Pbs-NH-sIq" customClass="CreditCardStep" customModule="Poke_Commerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-wS-t9O">
+                    <rect key="frame" x="20" y="20" width="335" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="namePhonePad" textContentType="name"/>
+                    <connections>
+                        <outlet property="delegate" destination="Pbs-NH-sIq" id="Qyr-nh-hH3"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Credit card number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oZu-8J-tlp">
+                    <rect key="frame" x="20" y="74" width="335" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="cc-number"/>
+                    <connections>
+                        <outlet property="delegate" destination="Pbs-NH-sIq" id="dSs-gX-aHX"/>
+                    </connections>
+                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mkL-Bm-iAF">
+                    <rect key="frame" x="20" y="128" width="335" height="34"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Month" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="y3B-xg-Enl">
+                            <rect key="frame" x="0.0" y="0.0" width="89" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                            <connections>
+                                <outlet property="delegate" destination="Pbs-NH-sIq" id="EMv-1M-zMe"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w56-pj-kgB">
+                            <rect key="frame" x="109" y="0.0" width="8" height="34"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0lV-OU-RC7">
+                            <rect key="frame" x="137" y="0.0" width="89" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" textContentType="tel"/>
+                            <connections>
+                                <outlet property="delegate" destination="Pbs-NH-sIq" id="Ve4-dR-YGM"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVV" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Zvp-cs-BRJ">
+                            <rect key="frame" x="246" y="0.0" width="89" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                            <connections>
+                                <outlet property="delegate" destination="Pbs-NH-sIq" id="2pa-rV-R0L"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0lV-OU-RC7" firstAttribute="width" secondItem="Zvp-cs-BRJ" secondAttribute="width" id="A9G-NT-nzW"/>
+                        <constraint firstItem="y3B-xg-Enl" firstAttribute="width" secondItem="0lV-OU-RC7" secondAttribute="width" id="ITG-5p-Vcw"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="1qR-pK-IBQ">
+                    <rect key="frame" x="0.0" y="180" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbv-DD-khl">
+                            <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Decline">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="declineTapped:" destination="Pbs-NH-sIq" eventType="touchUpInside" id="S0g-QQ-oq3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfb-hc-CMW">
+                            <rect key="frame" x="188" y="0.0" width="187" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Confirm">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmTapped:" destination="Pbs-NH-sIq" eventType="touchUpInside" id="rDN-du-5f3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Qfb-hc-CMW" firstAttribute="width" secondItem="Zbv-DD-khl" secondAttribute="width" id="E3o-GH-AUu"/>
+                        <constraint firstAttribute="height" constant="50" id="vZT-NR-tq0"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="itF-BY-LLs"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1qR-pK-IBQ" firstAttribute="leading" secondItem="Pbs-NH-sIq" secondAttribute="leading" id="3n9-L9-JDw"/>
+                <constraint firstItem="oZu-8J-tlp" firstAttribute="leading" secondItem="2VJ-wS-t9O" secondAttribute="leading" id="BDk-aG-FtX"/>
+                <constraint firstItem="mkL-Bm-iAF" firstAttribute="trailing" secondItem="oZu-8J-tlp" secondAttribute="trailing" id="GFO-pt-uKO"/>
+                <constraint firstItem="mkL-Bm-iAF" firstAttribute="top" secondItem="oZu-8J-tlp" secondAttribute="bottom" constant="20" id="NJ7-Mp-g85"/>
+                <constraint firstItem="oZu-8J-tlp" firstAttribute="trailing" secondItem="2VJ-wS-t9O" secondAttribute="trailing" id="WOH-Jx-sre"/>
+                <constraint firstItem="2VJ-wS-t9O" firstAttribute="top" secondItem="Pbs-NH-sIq" secondAttribute="top" constant="20" id="Za9-ui-gka"/>
+                <constraint firstAttribute="bottom" secondItem="1qR-pK-IBQ" secondAttribute="bottom" id="ewQ-zu-L2E"/>
+                <constraint firstItem="mkL-Bm-iAF" firstAttribute="leading" secondItem="oZu-8J-tlp" secondAttribute="leading" id="gDo-E0-wzz"/>
+                <constraint firstAttribute="trailing" secondItem="2VJ-wS-t9O" secondAttribute="trailing" constant="20" id="gXZ-T4-wQ1"/>
+                <constraint firstAttribute="trailing" secondItem="1qR-pK-IBQ" secondAttribute="trailing" id="h4I-yC-kfn"/>
+                <constraint firstItem="oZu-8J-tlp" firstAttribute="top" secondItem="2VJ-wS-t9O" secondAttribute="bottom" constant="20" id="nFk-ev-eq6"/>
+                <constraint firstItem="2VJ-wS-t9O" firstAttribute="leading" secondItem="Pbs-NH-sIq" secondAttribute="leading" constant="20" id="o95-EE-IL5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cardMonth" destination="y3B-xg-Enl" id="dTT-aN-YrI"/>
+                <outlet property="cardNumber" destination="oZu-8J-tlp" id="Qln-s0-dr8"/>
+                <outlet property="cardYear" destination="0lV-OU-RC7" id="rvM-27-V2L"/>
+                <outlet property="cvv" destination="Zvp-cs-BRJ" id="tEp-cp-Urh"/>
+                <outlet property="name" destination="2VJ-wS-t9O" id="ARc-ta-t5J"/>
+            </connections>
+            <point key="canvasLocation" x="-102.5" y="43"/>
+        </view>
+    </objects>
+</document>

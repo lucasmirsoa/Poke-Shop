@@ -5,7 +5,7 @@
 //  Created by Lucas M Soares on 28/06/21.
 //
 
-struct Purchase {
+struct Purchase: Codable {
     
     let name: String
     let price: String

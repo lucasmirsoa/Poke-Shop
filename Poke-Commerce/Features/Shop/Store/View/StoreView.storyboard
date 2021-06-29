@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dIf-6D-COZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Store View-->
+        <scene sceneID="uzs-e4-rUg">
+            <objects>
+                <viewController storyboardIdentifier="StoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dIf-6D-COZ" customClass="StoreView" customModule="Poke_Commerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zgh-69-jci"/>
+                        <viewControllerLayoutGuide type="bottom" id="8aL-to-fld"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iqw-DS-x8u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="store-background" translatesAutoresizingMaskIntoConstraints="NO" id="d4T-nL-CuL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qG1-XP-h4q"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d4T-nL-CuL" firstAttribute="top" secondItem="iqw-DS-x8u" secondAttribute="top" id="FaL-BC-LeU"/>
+                            <constraint firstAttribute="bottom" secondItem="d4T-nL-CuL" secondAttribute="bottom" id="ZA1-EU-TAN"/>
+                            <constraint firstAttribute="trailing" secondItem="d4T-nL-CuL" secondAttribute="trailing" id="g7i-bh-7Zt"/>
+                            <constraint firstItem="d4T-nL-CuL" firstAttribute="leading" secondItem="iqw-DS-x8u" secondAttribute="leading" id="mPU-SC-1Nj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nzP-Eh-1r6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871.01449275362324" y="-56.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="store-background" width="625" height="500"/>
+    </resources>
+</document>

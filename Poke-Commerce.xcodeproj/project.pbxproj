@@ -48,6 +48,22 @@
 		770C6C292689A3FA003B204A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 770C6C282689A3FA003B204A /* Realm */; };
 		770C6C2D2689A432003B204A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 770C6C2C2689A432003B204A /* Alamofire */; };
 		770C6C312689A462003B204A /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 770C6C302689A462003B204A /* AlamofireImage */; };
+		770C6C3E2689C571003B204A /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C3D2689C571003B204A /* StoreView.swift */; };
+		770C6C412689C57C003B204A /* StoreView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C402689C57C003B204A /* StoreView.storyboard */; };
+		770C6C442689C651003B204A /* StoreViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C432689C651003B204A /* StoreViewProtocol.swift */; };
+		770C6C472689D969003B204A /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C462689D969003B204A /* CreditCard.swift */; };
+		770C6C4D2689D9CE003B204A /* StorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C4C2689D9CE003B204A /* StorePresenter.swift */; };
+		770C6C51268A6DE0003B204A /* JoyAskingStep1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C50268A6DE0003B204A /* JoyAskingStep1.swift */; };
+		770C6C55268A6DF1003B204A /* JoyAskingStep2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C54268A6DF1003B204A /* JoyAskingStep2.swift */; };
+		770C6C58268A6E17003B204A /* CreditCardStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C57268A6E17003B204A /* CreditCardStep.swift */; };
+		770C6C5B268A6E97003B204A /* CreditCardConfirmationStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C5A268A6E97003B204A /* CreditCardConfirmationStep.swift */; };
+		770C6C5E268A6EAA003B204A /* PurchaseStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C5D268A6EAA003B204A /* PurchaseStep.swift */; };
+		770C6C61268A6EC7003B204A /* JoyAskingStep1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C60268A6EC7003B204A /* JoyAskingStep1.xib */; };
+		770C6C64268A6ED4003B204A /* JoyAskingStep2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C63268A6ED4003B204A /* JoyAskingStep2.xib */; };
+		770C6C67268A6EE1003B204A /* CreditCardStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C66268A6EE1003B204A /* CreditCardStep.xib */; };
+		770C6C6A268A6EF2003B204A /* CreditCardConfirmationStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C69268A6EF2003B204A /* CreditCardConfirmationStep.xib */; };
+		770C6C6D268A6F0E003B204A /* PurchaseStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C6C268A6F0E003B204A /* PurchaseStep.xib */; };
+		770C6C80268A80B2003B204A /* PurchaseServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C7F268A80B2003B204A /* PurchaseServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +106,22 @@
 		770C6C0926898EC3003B204A /* Do.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Do.swift; sourceTree = "<group>"; };
 		770C6C1226899334003B204A /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
 		770C6C1626899C20003B204A /* PurchaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
+		770C6C3D2689C571003B204A /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		770C6C402689C57C003B204A /* StoreView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreView.storyboard; sourceTree = "<group>"; };
+		770C6C432689C651003B204A /* StoreViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewProtocol.swift; sourceTree = "<group>"; };
+		770C6C462689D969003B204A /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		770C6C4C2689D9CE003B204A /* StorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorePresenter.swift; sourceTree = "<group>"; };
+		770C6C50268A6DE0003B204A /* JoyAskingStep1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyAskingStep1.swift; sourceTree = "<group>"; };
+		770C6C54268A6DF1003B204A /* JoyAskingStep2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyAskingStep2.swift; sourceTree = "<group>"; };
+		770C6C57268A6E17003B204A /* CreditCardStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardStep.swift; sourceTree = "<group>"; };
+		770C6C5A268A6E97003B204A /* CreditCardConfirmationStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardConfirmationStep.swift; sourceTree = "<group>"; };
+		770C6C5D268A6EAA003B204A /* PurchaseStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseStep.swift; sourceTree = "<group>"; };
+		770C6C60268A6EC7003B204A /* JoyAskingStep1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JoyAskingStep1.xib; sourceTree = "<group>"; };
+		770C6C63268A6ED4003B204A /* JoyAskingStep2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JoyAskingStep2.xib; sourceTree = "<group>"; };
+		770C6C66268A6EE1003B204A /* CreditCardStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardStep.xib; sourceTree = "<group>"; };
+		770C6C69268A6EF2003B204A /* CreditCardConfirmationStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardConfirmationStep.xib; sourceTree = "<group>"; };
+		770C6C6C268A6F0E003B204A /* PurchaseStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseStep.xib; sourceTree = "<group>"; };
+		770C6C7F268A80B2003B204A /* PurchaseServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,10 +226,9 @@
 			isa = PBXGroup;
 			children = (
 				770C6B722682BA45003B204A /* Service */,
-				770C6B4D26811530003B204A /* Protocol */,
+				770C6B6A2682B7D7003B204A /* Model */,
 				770C6B4C26811529003B204A /* Presenter */,
 				770C6B45268113ED003B204A /* View */,
-				770C6B6A2682B7D7003B204A /* Model */,
 			);
 			path = "Product List";
 			sourceTree = "<group>";
@@ -206,8 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				770C6B5C2682B47F003B204A /* Elements */,
-				770C6B4626811404003B204A /* ProductListView.swift */,
 				770C6B4926811415003B204A /* ProductListView.storyboard */,
+				770C6B4626811404003B204A /* ProductListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +246,7 @@
 		770C6B4C26811529003B204A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				770C6B4D26811530003B204A /* Protocol */,
 				770C6B4E26811548003B204A /* ProductListPresenter.swift */,
 			);
 			path = Presenter;
@@ -300,6 +332,7 @@
 			children = (
 				770C6B44268113E1003B204A /* Product List */,
 				770C6BC6268641F8003B204A /* Product Detail */,
+				770C6C382689C537003B204A /* Store */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -400,6 +433,117 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		770C6C382689C537003B204A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				770C6C7E268A807D003B204A /* Service */,
+				770C6C3C2689C54F003B204A /* Protocol */,
+				770C6C3B2689C54B003B204A /* Model */,
+				770C6C3A2689C544003B204A /* Presenter */,
+				770C6C392689C540003B204A /* View */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		770C6C392689C540003B204A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				770C6C4F268A6DC4003B204A /* Purchase Steps */,
+				770C6C402689C57C003B204A /* StoreView.storyboard */,
+				770C6C3D2689C571003B204A /* StoreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		770C6C3A2689C544003B204A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				770C6C4C2689D9CE003B204A /* StorePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		770C6C3B2689C54B003B204A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				770C6C462689D969003B204A /* CreditCard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		770C6C3C2689C54F003B204A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				770C6C432689C651003B204A /* StoreViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		770C6C4F268A6DC4003B204A /* Purchase Steps */ = {
+			isa = PBXGroup;
+			children = (
+				770C6C6F268A6F12003B204A /* Step 1 */,
+				770C6C70268A6F1D003B204A /* Step 2 */,
+				770C6C71268A6F24003B204A /* Step 3 */,
+				770C6C72268A6F2A003B204A /* Step 4 */,
+				770C6C74268A6F49003B204A /* Final Step */,
+			);
+			path = "Purchase Steps";
+			sourceTree = "<group>";
+		};
+		770C6C6F268A6F12003B204A /* Step 1 */ = {
+			isa = PBXGroup;
+			children = (
+				770C6C60268A6EC7003B204A /* JoyAskingStep1.xib */,
+				770C6C50268A6DE0003B204A /* JoyAskingStep1.swift */,
+			);
+			path = "Step 1";
+			sourceTree = "<group>";
+		};
+		770C6C70268A6F1D003B204A /* Step 2 */ = {
+			isa = PBXGroup;
+			children = (
+				770C6C63268A6ED4003B204A /* JoyAskingStep2.xib */,
+				770C6C54268A6DF1003B204A /* JoyAskingStep2.swift */,
+			);
+			path = "Step 2";
+			sourceTree = "<group>";
+		};
+		770C6C71268A6F24003B204A /* Step 3 */ = {
+			isa = PBXGroup;
+			children = (
+				770C6C66268A6EE1003B204A /* CreditCardStep.xib */,
+				770C6C57268A6E17003B204A /* CreditCardStep.swift */,
+			);
+			path = "Step 3";
+			sourceTree = "<group>";
+		};
+		770C6C72268A6F2A003B204A /* Step 4 */ = {
+			isa = PBXGroup;
+			children = (
+				770C6C69268A6EF2003B204A /* CreditCardConfirmationStep.xib */,
+				770C6C5A268A6E97003B204A /* CreditCardConfirmationStep.swift */,
+			);
+			path = "Step 4";
+			sourceTree = "<group>";
+		};
+		770C6C74268A6F49003B204A /* Final Step */ = {
+			isa = PBXGroup;
+			children = (
+				770C6C6C268A6F0E003B204A /* PurchaseStep.xib */,
+				770C6C5D268A6EAA003B204A /* PurchaseStep.swift */,
+			);
+			path = "Final Step";
+			sourceTree = "<group>";
+		};
+		770C6C7E268A807D003B204A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				770C6C7F268A80B2003B204A /* PurchaseServiceManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -471,7 +615,13 @@
 				770C6AEB267FEE82003B204A /* LaunchScreen.storyboard in Resources */,
 				770C6B5A26813AA9003B204A /* PokemonSolid-Normal.ttf in Resources */,
 				770C6BCE26864279003B204A /* ProductDetailView.storyboard in Resources */,
+				770C6C412689C57C003B204A /* StoreView.storyboard in Resources */,
+				770C6C67268A6EE1003B204A /* CreditCardStep.xib in Resources */,
+				770C6C6A268A6EF2003B204A /* CreditCardConfirmationStep.xib in Resources */,
 				770C6B4A26811415003B204A /* ProductListView.storyboard in Resources */,
+				770C6C61268A6EC7003B204A /* JoyAskingStep1.xib in Resources */,
+				770C6C64268A6ED4003B204A /* JoyAskingStep2.xib in Resources */,
+				770C6C6D268A6F0E003B204A /* PurchaseStep.xib in Resources */,
 				770C6BE726893E49003B204A /* ProfileView.storyboard in Resources */,
 				770C6AE8267FEE82003B204A /* Assets.xcassets in Resources */,
 				770C6B4226811398003B204A /* TabbarView.storyboard in Resources */,
@@ -489,29 +639,39 @@
 				770C6BEA26893ECF003B204A /* ProfilePresenter.swift in Sources */,
 				770C6ADF267FEE80003B204A /* AppDelegate.swift in Sources */,
 				770C6B702682B88C003B204A /* Product.swift in Sources */,
+				770C6C4D2689D9CE003B204A /* StorePresenter.swift in Sources */,
 				770C6BF026893F51003B204A /* ProfileViewProtocol.swift in Sources */,
 				770C6B752682D011003B204A /* ProductCollectionCell.swift in Sources */,
 				770C6B2826803285003B204A /* NSObjectExtension.swift in Sources */,
 				770C6C1726899C20003B204A /* PurchaseCell.swift in Sources */,
 				770C6C0A26898EC3003B204A /* Do.swift in Sources */,
 				770C6C1326899334003B204A /* Purchase.swift in Sources */,
+				770C6C51268A6DE0003B204A /* JoyAskingStep1.swift in Sources */,
 				770C6B552681371A003B204A /* ProductListViewProtocol.swift in Sources */,
 				770C6BD726864942003B204A /* ProductDetail.swift in Sources */,
+				770C6C442689C651003B204A /* StoreViewProtocol.swift in Sources */,
 				770C6B842683BA46003B204A /* ProductListServiceManager.swift in Sources */,
 				770C6B9126858516003B204A /* Loader.swift in Sources */,
+				770C6C3E2689C571003B204A /* StoreView.swift in Sources */,
 				770C6B6C2682B815003B204A /* Category.swift in Sources */,
+				770C6C58268A6E17003B204A /* CreditCardStep.swift in Sources */,
+				770C6C472689D969003B204A /* CreditCard.swift in Sources */,
 				770C6B392680F058003B204A /* Colors.swift in Sources */,
 				770C6BD4268648C7003B204A /* ProductDetailViewProtocol.swift in Sources */,
 				770C6BFC26896C7F003B204A /* PurchaseLocalServiceManager.swift in Sources */,
 				770C6B2F2680EF5C003B204A /* TabbarView.swift in Sources */,
 				770C6B8E268578D0003B204A /* Kind.swift in Sources */,
+				770C6C55268A6DF1003B204A /* JoyAskingStep2.swift in Sources */,
 				770C6BFF26896CFA003B204A /* PurchaseRealm.swift in Sources */,
 				770C6B4726811404003B204A /* ProductListView.swift in Sources */,
 				770C6B622682B4FC003B204A /* SectionTableCell.swift in Sources */,
+				770C6C80268A80B2003B204A /* PurchaseServiceManager.swift in Sources */,
+				770C6C5B268A6E97003B204A /* CreditCardConfirmationStep.swift in Sources */,
 				770C6B5F2682B4D1003B204A /* ProductTableCell.swift in Sources */,
 				770C6B8B2685549B003B204A /* ApiServiceManager.swift in Sources */,
 				770C6AE1267FEE80003B204A /* SceneDelegate.swift in Sources */,
 				770C6BE226893E2B003B204A /* ProfileView.swift in Sources */,
+				770C6C5E268A6EAA003B204A /* PurchaseStep.swift in Sources */,
 				770C6C0626896EE9003B204A /* LocalServiceManager.swift in Sources */,
 				770C6BDA26864A43003B204A /* ProductDetailPresenter.swift in Sources */,
 				770C6BD1268647A9003B204A /* ProductDetailView.swift in Sources */,

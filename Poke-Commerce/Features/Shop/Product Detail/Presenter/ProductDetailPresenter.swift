@@ -12,7 +12,7 @@ final class ProductDetailPresenter {
     private unowned let view: ProductDetailViewProtocol
     
     // Storage properties
-    var viewItem: ProductDetail?
+    private var viewItem: ProductDetail?
     
     init(view: ProductDetailViewProtocol) {
         self.view = view
@@ -74,15 +74,15 @@ extension ProductDetailPresenter {
         self.viewItem = productDetail
     }
     
+    func getProductDetail() -> ProductDetail? {
+        return self.viewItem
+    }
+    
     func viewDidLoad() {
         
         guard let productDetail = self.viewItem else {
             return print("View item at ProductDetailPresenter seems to be wrong")
         }
         self.view.fillOutlets(with: productDetail)
-    }
-    
-    func buyItem() {
-//        router.presentStore(with: DetailedPokemon(pokemon: item, price: price))
     }
 }

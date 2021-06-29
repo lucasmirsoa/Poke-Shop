@@ -34,6 +34,14 @@ class ProductDetailView: UIViewController {
         super.viewWillAppear(animated)
         self.customLayout()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "store",
+           let storeView = (segue.destination as? StoreView) {
+            
+            storeView.setProductDetail(with: self.presenter.getProductDetail())
+        }
+    }
 }
 
 // MARK: - Private methods
@@ -101,7 +109,7 @@ extension ProductDetailView {
 extension ProductDetailView {
     
     @IBAction func buyTapped(_ sender: UIButton) {
-//        self.presenter.buyItem()
+        self.performSegue(withIdentifier: "store", sender: self)
     }
 }
 
