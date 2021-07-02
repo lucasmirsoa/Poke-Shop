@@ -34,11 +34,10 @@ struct Category: Decodable {
         self.products = try values.decode([Product].self, forKey: .products)
     }
     
-    private func priceToString(with price: Int) -> String {
-        
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        
-        return formatter.string(from: NSNumber(value: price)) ?? ""
+    init(id: Int, section: String, price: String, products: [Product]) {
+        self.id = id
+        self.section = section
+        self.price = price
+        self.products = products
     }
 }

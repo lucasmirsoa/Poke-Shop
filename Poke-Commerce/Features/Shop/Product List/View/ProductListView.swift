@@ -18,8 +18,8 @@ class ProductListView: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.presenter.viewDidLoad()
-        self.customLayout()
+        self.showLoading()
+        self.presenter.requestProducts()
         self.navigationBarLayout()
         self.tableLayout()
     }
@@ -39,10 +39,6 @@ class ProductListView: UITableViewController {
 // MARK: - Private methods
 
 extension ProductListView {
-    
-    private func customLayout() {
-        self.tabBarController?.tabBar.isHidden = false
-    }
     
     private func navigationBarLayout() {
         
@@ -69,7 +65,7 @@ extension ProductListView {
 extension ProductListView {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return presenter.sectionsCount()
+        return self.presenter.sectionsCount()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,6 +80,7 @@ extension ProductListView {
         
         let header = tableView.dequeueReusableCell(withIdentifier: SectionCell.identifier) as! SectionCell
         header.fillOutlets(with: presenter.sectionItem(by: section))
+        
         return header
     }
     
@@ -97,6 +94,7 @@ extension ProductListView {
         cell.listView = self
         cell.products = presenter.sectionItem(by: indexPath.section).products
         cell.section = indexPath.section
+        
         return cell
     }
 }

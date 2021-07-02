@@ -8,9 +8,14 @@
 import Foundation
 import Alamofire
 
-final class ProductListServiceManager {
+final class ProductListServiceManager: ProductListServiceProtocol {
     
-    func listCategories(completion: @escaping(_ success: Bool, _ categories: [Category]?) -> Void) {
+    enum RequestResult {
+        case success(viewItems: [Category])
+        case fail(error: String)
+    }
+    
+    func listCategories(completion: @escaping(_ result: RequestResult) -> Void) {
         
         guard let url = URL(string: ApiServiceManager.ApiURLs.list.rawValue) else {
             return debugPrint("URL at listCategories with problem")
@@ -18,16 +23,15 @@ final class ProductListServiceManager {
         
         AF.request(URLRequest(url: url)).response { response in
             
-            if let _ = response.error {
-                return completion(false, nil)
+            if let error = response.error {
+                return completion(RequestResult.fail(error: error.localizedDescription))
             }
             
             guard let data = response.data, let categories = try? JSONDecoder().decode([Category].self, from: data) else {
-                debugPrint("Problems to parse categories in listCategories")
-                return completion(false, nil)
+                return completion(RequestResult.fail(error: "Problems to parse categories in listCategories"))
             }
 
-            completion(true, categories)
+            completion(RequestResult.success(viewItems: categories))
         }
     }
 }

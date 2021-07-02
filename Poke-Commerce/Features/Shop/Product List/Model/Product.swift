@@ -35,4 +35,13 @@ struct Product: Decodable {
         self.weakness = try values.decode([Kind].self, forKey: .weakness)
         self.image = try values.decode(String.self, forKey: .image)
     }
+    
+    init(id: Int, name: String, description: String, types: [Kind], weakness: [Kind], image: String) {
+        self.id = id
+        self.name = name
+        self.description = description
+        self.types = types
+        self.weakness = weakness
+        self.image = image
+    }
 }

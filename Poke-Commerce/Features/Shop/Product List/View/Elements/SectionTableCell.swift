@@ -15,7 +15,6 @@ class SectionCell: UITableViewCell {
 extension SectionCell {
     
     func fillOutlets(with item: Category) {
-
         self.sectionTitle.text = item.section
         self.price.text = item.price
     }

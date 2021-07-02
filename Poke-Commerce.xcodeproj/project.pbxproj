@@ -61,7 +61,21 @@
 		770C6C67268A6EE1003B204A /* CreditCardStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C66268A6EE1003B204A /* CreditCardStep.xib */; };
 		770C6C6D268A6F0E003B204A /* PurchaseStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C6C6C268A6F0E003B204A /* PurchaseStep.xib */; };
 		770C6C80268A80B2003B204A /* PurchaseServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C6C7F268A80B2003B204A /* PurchaseServiceManager.swift */; };
+		7775E290268F4B5D0010EB1F /* Poke_CommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7775E28F268F4B5D0010EB1F /* Poke_CommerceTests.swift */; };
+		7775E29D268F57BF0010EB1F /* ProductListServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7775E29C268F57BF0010EB1F /* ProductListServiceProtocol.swift */; };
+		7775E2A1268F59EF0010EB1F /* ProductListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7775E2A0268F59EF0010EB1F /* ProductListPresenterTests.swift */; };
+		7775E2A7268F5C180010EB1F /* MockProductListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7775E2A6268F5C180010EB1F /* MockProductListService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7775E292268F4B5D0010EB1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 770C6AD3267FEE80003B204A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 770C6ADA267FEE80003B204A;
+			remoteInfo = "Poke-Commerce";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		770C6ADB267FEE80003B204A /* Poke-Commerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poke-Commerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +130,12 @@
 		770C6C66268A6EE1003B204A /* CreditCardStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardStep.xib; sourceTree = "<group>"; };
 		770C6C6C268A6F0E003B204A /* PurchaseStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseStep.xib; sourceTree = "<group>"; };
 		770C6C7F268A80B2003B204A /* PurchaseServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseServiceManager.swift; sourceTree = "<group>"; };
+		7775E28D268F4B5D0010EB1F /* Poke-CommerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poke-CommerceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7775E28F268F4B5D0010EB1F /* Poke_CommerceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poke_CommerceTests.swift; sourceTree = "<group>"; };
+		7775E291268F4B5D0010EB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7775E29C268F57BF0010EB1F /* ProductListServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListServiceProtocol.swift; sourceTree = "<group>"; };
+		7775E2A0268F59EF0010EB1F /* ProductListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenterTests.swift; sourceTree = "<group>"; };
+		7775E2A6268F5C180010EB1F /* MockProductListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductListService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +150,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7775E28A268F4B5D0010EB1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				770C6ADD267FEE80003B204A /* Poke-Commerce */,
+				7775E28E268F4B5D0010EB1F /* Poke-CommerceTests */,
 				770C6ADC267FEE80003B204A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				770C6ADB267FEE80003B204A /* Poke-Commerce.app */,
+				7775E28D268F4B5D0010EB1F /* Poke-CommerceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,8 +227,8 @@
 		770C6B2B2680EEBA003B204A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				770C6B2E2680EF5C003B204A /* TabbarView.swift */,
 				770C6B4126811398003B204A /* TabbarView.storyboard */,
+				770C6B2E2680EF5C003B204A /* TabbarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +249,7 @@
 			children = (
 				770C6B722682BA45003B204A /* Service */,
 				770C6B6A2682B7D7003B204A /* Model */,
+				770C6B4D26811530003B204A /* Protocols */,
 				770C6B4C26811529003B204A /* Presenter */,
 				770C6B45268113ED003B204A /* View */,
 			);
@@ -239,18 +269,18 @@
 		770C6B4C26811529003B204A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				770C6B4D26811530003B204A /* Protocol */,
 				770C6B4E26811548003B204A /* ProductListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		770C6B4D26811530003B204A /* Protocol */ = {
+		770C6B4D26811530003B204A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				770C6B542681371A003B204A /* ProductListViewProtocol.swift */,
+				7775E29C268F57BF0010EB1F /* ProductListServiceProtocol.swift */,
 			);
-			path = Protocol;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		770C6B5726813A6A003B204A /* Resources */ = {
@@ -527,6 +557,25 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		7775E28E268F4B5D0010EB1F /* Poke-CommerceTests */ = {
+			isa = PBXGroup;
+			children = (
+				7775E299268F4B660010EB1F /* Product List  */,
+				7775E28F268F4B5D0010EB1F /* Poke_CommerceTests.swift */,
+				7775E291268F4B5D0010EB1F /* Info.plist */,
+			);
+			path = "Poke-CommerceTests";
+			sourceTree = "<group>";
+		};
+		7775E299268F4B660010EB1F /* Product List  */ = {
+			isa = PBXGroup;
+			children = (
+				7775E2A6268F5C180010EB1F /* MockProductListService.swift */,
+				7775E2A0268F59EF0010EB1F /* ProductListPresenterTests.swift */,
+			);
+			path = "Product List ";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -553,6 +602,24 @@
 			productReference = 770C6ADB267FEE80003B204A /* Poke-Commerce.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7775E28C268F4B5D0010EB1F /* Poke-CommerceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7775E294268F4B5D0010EB1F /* Build configuration list for PBXNativeTarget "Poke-CommerceTests" */;
+			buildPhases = (
+				7775E289268F4B5D0010EB1F /* Sources */,
+				7775E28A268F4B5D0010EB1F /* Frameworks */,
+				7775E28B268F4B5D0010EB1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7775E293268F4B5D0010EB1F /* PBXTargetDependency */,
+			);
+			name = "Poke-CommerceTests";
+			productName = "Poke-CommerceTests";
+			productReference = 7775E28D268F4B5D0010EB1F /* Poke-CommerceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -564,6 +631,10 @@
 				TargetAttributes = {
 					770C6ADA267FEE80003B204A = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					7775E28C268F4B5D0010EB1F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 770C6ADA267FEE80003B204A;
 					};
 				};
 			};
@@ -586,6 +657,7 @@
 			projectRoot = "";
 			targets = (
 				770C6ADA267FEE80003B204A /* Poke-Commerce */,
+				7775E28C268F4B5D0010EB1F /* Poke-CommerceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -610,6 +682,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7775E28B268F4B5D0010EB1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -631,6 +710,7 @@
 				770C6B552681371A003B204A /* ProductListViewProtocol.swift in Sources */,
 				770C6BD726864942003B204A /* ProductDetail.swift in Sources */,
 				770C6C442689C651003B204A /* StoreViewProtocol.swift in Sources */,
+				7775E29D268F57BF0010EB1F /* ProductListServiceProtocol.swift in Sources */,
 				770C6B842683BA46003B204A /* ProductListServiceManager.swift in Sources */,
 				770C6B9126858516003B204A /* Loader.swift in Sources */,
 				770C6C3E2689C571003B204A /* StoreView.swift in Sources */,
@@ -658,7 +738,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7775E289268F4B5D0010EB1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7775E2A7268F5C180010EB1F /* MockProductListService.swift in Sources */,
+				7775E2A1268F59EF0010EB1F /* ProductListPresenterTests.swift in Sources */,
+				7775E290268F4B5D0010EB1F /* Poke_CommerceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7775E293268F4B5D0010EB1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 770C6ADA267FEE80003B204A /* Poke-Commerce */;
+			targetProxy = 7775E292268F4B5D0010EB1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		770C6AE9267FEE82003B204A /* LaunchScreen.storyboard */ = {
@@ -827,6 +925,46 @@
 			};
 			name = Release;
 		};
+		7775E295268F4B5D0010EB1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2L227SFHL;
+				INFOPLIST_FILE = "Poke-CommerceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.lucasmirsoa.Poke-CommerceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poke-Commerce.app/Poke-Commerce";
+			};
+			name = Debug;
+		};
+		7775E296268F4B5D0010EB1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2L227SFHL;
+				INFOPLIST_FILE = "Poke-CommerceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.lucasmirsoa.Poke-CommerceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poke-Commerce.app/Poke-Commerce";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -844,6 +982,15 @@
 			buildConfigurations = (
 				770C6B06267FEE82003B204A /* Debug */,
 				770C6B07267FEE82003B204A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7775E294268F4B5D0010EB1F /* Build configuration list for PBXNativeTarget "Poke-CommerceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7775E295268F4B5D0010EB1F /* Debug */,
+				7775E296268F4B5D0010EB1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
